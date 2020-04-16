@@ -1,21 +1,13 @@
+@import './variables';
 @import './reset';
 @import './media-queries';
+@import './util.scss';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
 
 @include reset;
 
 html {
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-size: $font-size-default;
+  font-family: $font-body-copy-default;
 }

@@ -1,0 +1,34 @@
+
+@mixin font($type, $size) {
+  font-size: map-deep-get($font-sizes, $type, $size);
+  line-height: map-deep-get($line-heights, $type, $size);
+}
+
+@mixin body-copy {
+  @include font('body-copy', 2);
+
+  @include at-breakpoint-sm {
+    @include font('body-copy', 1);
+  };
+}
+
+@mixin display($size: 1) {
+  @include font('display', $size);
+  color: map-deep-get($colors, gray, 2)
+}
+
+@mixin title($size: 1) {
+  @include font('title', $size);
+}
+
+@mixin eyebrow($size: 1) {
+  @include font('eyebrow', $size);
+}
+
+@mixin body-copy($size: 2) {
+  @include font('body-copy', $size);
+
+  @include at-breakpoint-sm {
+    @include font('body-copy', ($size - 1));
+  };
+}
