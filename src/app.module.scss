@@ -1,0 +1,99 @@
+@import "./index.scss";
+
+@mixin body-copy {
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  @include at-breakpoint-sm {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  };
+}
+
+.nav {
+  @include body-copy;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1rem;
+  }
+
+  a {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-bottom: 1px solid #FF2D78;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+}
+
+.superHeroHeading {
+  font-size: 4rem;
+  line-height: 4.25rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1), 0px 0px 28px rgba(255, 255, 255, 0.6);
+
+  @include at-breakpoint-sm {
+    font-size: 12vw;
+    line-height: 1.2;
+  };
+}
+
+.heroList {
+  li {
+    display: flex;
+
+    svg {
+      margin-right: 1.5rem;
+    }
+  }
+}
+
+.header {
+  padding: 1rem;
+  @include body-copy;
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+
+    @include at-breakpoint-sm {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+
+  @include at-breakpoint-sm {
+    padding: 1.5rem;
+  };
+}
+
+.site {
+  background: linear-gradient(180deg, #494949 0%, #000000 100%);  color: #FFFFFF;
+  width: 100vw;
+  height: 100vh;
+}
+
+.skewedBg {
+  background: linear-gradient(145deg, #494949 0%, #000000 100%);
+  min-height: 50rem;
+  transform: skewY(-4deg);
+  z-index: 0;
+  position: relative;
+  padding-top: 3rem;
+  margin-top: 3rem;
+
+  > .content {
+    @include body-copy;
+    transform: skewY(4deg);
+  }
+}
