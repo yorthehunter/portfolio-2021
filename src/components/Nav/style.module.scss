@@ -2,9 +2,15 @@
 
 .nav {
   @include body-copy;
+
   position: relative;
   z-index: 2;
   background-color: color(white);
+  margin-bottom: 2rem;
+
+  @include above-breakpoint-md {
+    margin-bottom: 4rem;
+  };
 
   ul {
     display: flex;
@@ -15,7 +21,7 @@
 
   a {
     @include link-text;
-    
+
     font-style: normal;
     font-weight: normal;
     text-decoration: none;

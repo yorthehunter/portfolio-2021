@@ -36,29 +36,53 @@
 }
 
 .myLinks {
-  > li + li {
-    margin-top: 1rem;
+  > li {
+    display: flex;
+    align-items: center;
+
+    + li {
+     margin-top: 1rem;
+    }
   }
 
-  a {
+  a,
+  .looksLikeLink {
     @include link-text;
+    cursor: pointer;
+  }
+}
+
+.checkmark {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.5rem;
+
+  > path {
+    stroke: color(mint);
   }
 }
 
 .header {
   @include body-copy;
 
-  padding: 2rem 1rem 4rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 0 1rem 4rem;
+  border-bottom: 1px solid color(gray, 5);
+  overflow: auto;
 
   @include above-breakpoint-md {
-    box-shadow: 4px 0 12px rgba(0,0,0,0.1);
-    flex-grow: 1;
-    flex-shrink: 1;
+    border-right: 1px solid color(gray, 5);
+    border-bottom: none;
+    width: 375px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
   }
 }
 
-.site {
-  width: 100vw;
-  height: 100vh;
+.content {
+  @include above-breakpoint-md {
+    padding-left: calc(375px + 1rem);
+    padding: 4rem 1rem 4rem calc(375px + 1rem);
+  }
 }
