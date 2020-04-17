@@ -1,0 +1,30 @@
+@import '../../index';
+
+.nav {
+  @include body-copy;
+  position: relative;
+  z-index: 2;
+  background-color: color(white);
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  a {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    border-bottom: 1px solid #FF2D78;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    transition: color 0.1s ease-in;
+
+    &:hover {
+      color: color(raspberry);
+      text-shadow: 0 0 12px rgba(color(raspberry), 0.1);
+    }
+  }
+}

@@ -1,58 +1,49 @@
 @import "./index.scss";
 
-.nav {
-  @include body-copy;
-
-  ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    padding: 1rem;
-  }
-
-  a {
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: none;
-    border-bottom: 1px solid #FF2D78;
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-  }
-}
-
 .superHeroHeading {
   @include display;
+
+  position: relative;
+  margin-bottom: 4rem;
+
+  > .strategist {
+    color: map-get($colors, raspberry);
+  }
+
+  > .developer {
+    color: map-get($colors, grape);
+  }
+
+  &::after {
+    content: '';
+    height: 0.25rem;
+    width: 5rem;
+    background-color: map-get($colors, raspberry);
+    position: absolute;
+    left: 0;
+    bottom: -0.25rem;
+  }
 }
 
-.heroList {
-  li {
-    display: flex;
+.myName {
+  @include title(2);
+  margin-bottom: 1rem;
+}
 
-    svg {
-      margin-right: 1.5rem;
-    }
-  }
+.myTitle {
+  @include body-copy;
+  margin-bottom: 1rem;
 }
 
 .header {
-  padding: 1rem;
   @include body-copy;
 
-  svg {
-    width: 2rem;
-    height: 2rem;
+  padding: 2rem 1rem 4rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 
-    @include at-breakpoint-sm {
-      width: 3rem;
-      height: 3rem;
-    }
+  @include above-breakpoint-md {
+    box-shadow: unset;
   }
-
-  @include at-breakpoint-sm {
-    padding: 1.5rem;
-  };
 }
 
 .site {

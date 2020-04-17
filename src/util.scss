@@ -1,34 +1,29 @@
 
-@mixin font($type, $size) {
+@mixin font($type, $size, $isResponsive: false) {
   font-size: map-deep-get($font-sizes, $type, $size);
   line-height: map-deep-get($line-heights, $type, $size);
-}
 
-@mixin body-copy {
-  @include font('body-copy', 2);
-
-  @include at-breakpoint-sm {
-    @include font('body-copy', 1);
-  };
+  @if $isResponsive == true {
+    font-size: map-deep-get($font-sizes, $type, ($size - 1));
+    line-height: map-deep-get($line-heights, $type, ($size - 1));
+  }
 }
 
 @mixin display($size: 1) {
   @include font('display', $size);
-  color: map-deep-get($colors, gray, 2)
+  font-family: $font-family-serif;
+  letter-spacing: -2.08px;
 }
 
 @mixin title($size: 1) {
   @include font('title', $size);
+  font-family: $font-family-serif;
 }
 
 @mixin eyebrow($size: 1) {
   @include font('eyebrow', $size);
 }
 
-@mixin body-copy($size: 2) {
+@mixin body-copy($size: 1) {
   @include font('body-copy', $size);
-
-  @include at-breakpoint-sm {
-    @include font('body-copy', ($size - 1));
-  };
 }
