@@ -35,6 +35,16 @@
   margin-bottom: 1rem;
 }
 
+.myLinks {
+  > li + li {
+    margin-top: 1rem;
+  }
+
+  a {
+    @include link-text;
+  }
+}
+
 .header {
   @include body-copy;
 
@@ -42,7 +52,9 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 
   @include above-breakpoint-md {
-    box-shadow: unset;
+    box-shadow: 4px 0 12px rgba(0,0,0,0.1);
+    flex-grow: 1;
+    flex-shrink: 1;
   }
 }
 

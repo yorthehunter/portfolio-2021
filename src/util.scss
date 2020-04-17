@@ -27,3 +27,22 @@
 @mixin body-copy($size: 1) {
   @include font('body-copy', $size);
 }
+
+@mixin link-text {
+  border-bottom: 1px solid color(raspberry);
+  transition: color 0.1s ease-in;
+
+  &:hover {
+    color: color(raspberry);
+    animation: glow 0.7s ease-out;
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 2rem rgba(color(raspberry), 0.85);
+    }
+    to {
+      text-shadow: 0 0 1rem rgba(color(raspberry), 0);
+    }
+  }
+}

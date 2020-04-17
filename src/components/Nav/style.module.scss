@@ -14,17 +14,12 @@
   }
 
   a {
+    @include link-text;
+    
     font-style: normal;
     font-weight: normal;
     text-decoration: none;
-    border-bottom: 1px solid #FF2D78;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
-    transition: color 0.1s ease-in;
-
-    &:hover {
-      color: color(raspberry);
-      text-shadow: 0 0 12px rgba(color(raspberry), 0.1);
-    }
   }
 }
