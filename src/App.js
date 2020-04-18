@@ -15,7 +15,7 @@ function App() {
         <Nav />
         <h1 className={style.superHeroHeading}>
           Design Systems<br />
-          <span className={style.strategist}>Strategist</span> &<br />
+          <span className={style.strategist}>Strategist</span> & <br className={style.optionalBreak} />
           <span className={style.developer}>Developer</span>
         </h1>
         <h2 className={style.myName}>Brian Cleveland</h2>

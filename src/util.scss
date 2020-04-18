@@ -4,28 +4,30 @@
   line-height: map-deep-get($line-heights, $type, $size);
 
   @if $isResponsive == true {
-    font-size: map-deep-get($font-sizes, $type, ($size - 1));
-    line-height: map-deep-get($line-heights, $type, ($size - 1));
+    @include above-breakpoint-sm {
+      font-size: map-deep-get($font-sizes, $type, ($size - 1));
+      line-height: map-deep-get($line-heights, $type, ($size - 1));
+    }
   }
 }
 
-@mixin display($size: 1) {
-  @include font('display', $size);
+@mixin display($size: 1, $isResponsive: false) {
+  @include font('display', $size, $isResponsive);
   font-family: $font-family-serif;
   letter-spacing: -2.08px;
 }
 
-@mixin title($size: 1) {
-  @include font('title', $size);
+@mixin title($size: 1, $isResponsive: false) {
+  @include font('title', $size, $isResponsive);
   font-family: $font-family-serif;
 }
 
-@mixin eyebrow($size: 1) {
-  @include font('eyebrow', $size);
+@mixin eyebrow($size: 1, $isResponsive: false) {
+  @include font('eyebrow', $size, $isResponsive);
 }
 
-@mixin body-copy($size: 1) {
-  @include font('body-copy', $size);
+@mixin body-copy($size: 1, $isResponsive: false) {
+  @include font('body-copy', $size, $isResponsive);
 }
 
 @mixin link-text {

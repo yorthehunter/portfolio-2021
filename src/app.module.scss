@@ -26,12 +26,11 @@
 }
 
 .myName {
-  @include title(2);
-  margin-bottom: 1rem;
+  @include title(2, true);
+  margin-bottom: 0.5rem;
 }
 
 .myTitle {
-  @include body-copy;
   margin-bottom: 1rem;
 }
 
@@ -63,7 +62,7 @@
 }
 
 .header {
-  @include body-copy;
+  @include body-copy(2, true);
 
   padding: 0 1rem 4rem;
   border-bottom: 1px solid color(gray, 5);
@@ -81,8 +80,13 @@
 }
 
 .content {
+  padding: 4rem 1rem;
+
   @include above-breakpoint-md {
-    padding-left: calc(375px + 1rem);
-    padding: 4rem 1rem 4rem calc(375px + 1rem);
+    padding: 4rem 2rem 4rem calc(375px + 2rem);
   }
+}
+
+.optionalBreak {
+  @include hide-above($breakpoint-sm);
 }

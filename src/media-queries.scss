@@ -82,3 +82,15 @@ $breakpoint-legacy-lg: 1200px;
     @content;
   }
 }
+
+@mixin hide-below($breakpoint) {
+  @include below-breakpoint($breakpoint) {
+    display: none;
+  };
+}
+
+@mixin hide-above($breakpoint) {
+  @include above-breakpoint($breakpoint) {
+    display: none;
+  };
+}
