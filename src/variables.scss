@@ -14,7 +14,9 @@ $font-sizes: (
     3: 1.75rem,
     4: 1.5rem
   ),
-  eyebrow: 1rem,
+  eyebrow: (
+    1: 1rem,
+  ),
   body-copy: (
     1: 1.25rem,
     2: 1.125rem
@@ -31,10 +33,12 @@ $line-heights: (
     3: 2.25rem,
     4: 2rem
   ),
-  eyebrow: 1rem,
+  eyebrow: (
+    1: 1rem,
+  ),
   body-copy: (
     1: 1.875rem,
-    2: 1.5rem
+    2: 1.75rem
   )
 );
 

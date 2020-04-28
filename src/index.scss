@@ -11,4 +11,5 @@ html {
   font-size: $font-size-default;
   font-family: $font-body-copy-default;
   color: map-deep-get($colors, gray, 1);
+  -webkit-font-smoothing: antialiased;
 }
