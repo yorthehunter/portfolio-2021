@@ -14,12 +14,13 @@
 @mixin display($size: 1, $isResponsive: false) {
   @include font('display', $size, $isResponsive);
   font-family: $font-family-serif;
-  letter-spacing: -2.08px;
+  letter-spacing: -0.04em;
 }
 
 @mixin title($size: 1, $isResponsive: false) {
   @include font('title', $size, $isResponsive);
   font-family: $font-family-serif;
+  letter-spacing: -0.02em;
 }
 
 @mixin eyebrow($size: 1, $isResponsive: false) {
