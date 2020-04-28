@@ -1,14 +1,15 @@
 import React from 'react';
 import style from './style.module.scss';
+import { Link } from "@reach/router";
 
 const Nav = () => (
   <nav className={style.nav}>
     <ul>
       <li>
-        <a href="#About">About</a>
+        <Link to="/">About</Link>{" "}
       </li>
       <li>
-        <a href="#Work">Work</a>
+        <Link to="work">Work</Link>
       </li>
     </ul>
   </nav>
