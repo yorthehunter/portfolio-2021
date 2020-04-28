@@ -55,9 +55,31 @@
   width: 1.5rem;
   height: 1.5rem;
   margin-left: 0.5rem;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: drawStroke .3s cubic-bezier(0.650, 0.000, 0.450, 1.000) .1s forwards, fadeOut .3s cubic-bezier(0.650, 0.000, 0.450, 1.000) 1.2s forwards;
 
   > path {
     stroke: color(mint);
+  }
+}
+
+@keyframes drawStroke {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
