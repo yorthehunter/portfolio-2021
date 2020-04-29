@@ -26,7 +26,7 @@ const Header = () => {
         at Stitch Fix
       </h3>
       <ul className={style.myLinks}>
-        <li><a href="#">Resume</a></li>
+        <li><a href="https://www.figma.com/file/k4atM81j9Nr2LZWZBwdT0i/Brian-Cleveland---Resume?node-id=1%3A39">Resume</a></li>
         <li><a href="https://www.linkedin.com/in/borudesign/">LinkedIn</a></li>
         <li><a href="https://github.com/yorthehunter/">GitHub</a></li>
         <li>

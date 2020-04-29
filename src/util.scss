@@ -111,14 +111,17 @@
     }
   }
 
+  strong,
+  em {
+    color: color(plum);
+  }
+
   strong {
     font-weight: 600;
-    color: color(grape);
   }
 
   em {
     font-style: italic;
-    color: color(grape);
   }
 
   .subtle {
