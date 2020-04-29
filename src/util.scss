@@ -57,14 +57,12 @@
   h4 { @include title(4, true); }
   p { @include body-copy(2, true); max-width: 42.5rem; }
 
-  // h1,
-  // h2,
-  // h3,
-  // h4 {
-  //   &:not(:first-child) {
-  //     margin-top: 2rem;
-  //   }
-  // }
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-top: 2rem;
+  }
 
   p + p,
   h1 + p,
@@ -115,6 +113,12 @@
 
   strong {
     font-weight: 600;
+    color: color(grape);
+  }
+
+  em {
+    font-style: italic;
+    color: color(grape);
   }
 
   .subtle {

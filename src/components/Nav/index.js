@@ -2,14 +2,16 @@ import React from 'react';
 import style from './style.module.scss';
 import { Link } from "@reach/router";
 
+const basePath = process.env.PUBLIC_URL;
+
 const Nav = () => (
   <nav className={style.nav}>
     <ul>
       <li>
-        <Link to="/">About</Link>{" "}
+        <Link to={`${basePath}/`}>About</Link>{" "}
       </li>
       <li>
-        <Link to="work">Work</Link>
+        <Link to={`${basePath}/work`}>Work</Link>
       </li>
     </ul>
   </nav>

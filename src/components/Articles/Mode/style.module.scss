@@ -4,6 +4,10 @@
   position: relative;
   margin-bottom: 3rem;
 
+  &:first-child {
+    margin-top: 0;    
+  }
+
   &::after {
     content: '';
     height: 0.125rem;
