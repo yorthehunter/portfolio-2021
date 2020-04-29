@@ -1,11 +1,12 @@
 import React from 'react';
 import style from './app.module.scss'
 import Header from './components/Header';
+import ModeArticle from './components/Articles/Mode';
 import { Router } from "@reach/router"
 
 const About = () => (
   <article className="article-content">
-    <h2>About me</h2>
+    <h2 className="page-heading">About me</h2>
     <h3>At work</h3>
     <p>
       Life has taught me how to take worries and break them down into groups of a) things outside of my control, thus de-prioritized and b) smaller, actionable problems to solve.
@@ -22,12 +23,7 @@ const About = () => (
 );
 
 const Work = () => (
-  <article>
-    hello. <br />
-    hello. <br />
-    hello. <br />
-    hello. <br />
-  </article>
+  <ModeArticle />
 );
 
 function App() {

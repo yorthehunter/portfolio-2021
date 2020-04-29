@@ -7,7 +7,10 @@ import style from './style.module.scss'
 
 const Header = () => {
   const EMAIL_ADDRESS = "boru.design@gmail.com";
-  const [isCopied, setCopied] = useClipboard(EMAIL_ADDRESS);
+
+  const [isCopied, setCopied] = useClipboard(EMAIL_ADDRESS, {
+    successDuration: 2000
+  });
 
   return (
     <header className={style.header}>

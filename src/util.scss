@@ -55,16 +55,16 @@
   h2 { @include title(2, true); }
   h3 { @include title(3, true); }
   h4 { @include title(4, true); }
-  p { @include body-copy(2, true); }
+  p { @include body-copy(2, true); max-width: 42.5rem; }
 
-  h1,
-  h2,
-  h3,
-  h4 {
-    &:not(:first-child) {
-      margin-top: 2rem;
-    }
-  }
+  // h1,
+  // h2,
+  // h3,
+  // h4 {
+  //   &:not(:first-child) {
+  //     margin-top: 2rem;
+  //   }
+  // }
 
   p + p,
   h1 + p,
@@ -78,11 +78,69 @@
 
   h4 + p { margin-top: 0.25rem; }
 
+  ol {
+    list-style: upper-roman;
+  }
+
+  dl {
+    @include body-copy(1);
+    margin: 2rem auto;
+  }
+
+  dt {
+    font-weight: 600;
+  }
+
+  dd {
+    font-style: italic;
+  }
+
+  dd + dd {
+    margin-top: 0.5rem;
+  }
+
+  blockquote {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom:0;
+      left: -0.75rem;
+      width: 0.25rem;
+      background-color: color(gray, 5);
+    }
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
   .subtle {
     color: color(gray, 3);
   }
 
   .eyebrow {
     @include eyebrow(1);
+  }
+
+  .page-heading {
+    position: relative;
+    margin-bottom: 3rem;
+
+    &::after {
+      content: '';
+      height: 0.125rem;
+      width: 3rem;
+      background-color: map-get($colors, grape);
+      position: absolute;
+      left: 0;
+      bottom: -0.25rem;
+    }
+  }
+
+  .subtitle {
+    color: color(gray, 3);
   }
 }

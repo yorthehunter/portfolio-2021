@@ -1,14 +1,4 @@
-@import "./index.scss";
-
-.content {
-  padding: 4rem 1rem;
-
-  @include above-breakpoint-md {
-    padding: 4rem 2rem 4rem calc(375px + 2rem);
-  }
-}
-
-// Work
+@import "../../../index.scss";
 
 .pageHeading {
   position: relative;
@@ -28,5 +18,3 @@
 .subtitle {
   color: color(gray, 3);
 }
-
-// End Work
