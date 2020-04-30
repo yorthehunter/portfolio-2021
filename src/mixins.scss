@@ -1,0 +1,50 @@
+@mixin font($type, $size, $isResponsive: false) {
+  font-size: map-deep-get($font-sizes, $type, $size);
+  line-height: map-deep-get($line-heights, $type, $size);
+
+  @if $isResponsive == true {
+    @include above-breakpoint-sm {
+      font-size: map-deep-get($font-sizes, $type, ($size - 1));
+      line-height: map-deep-get($line-heights, $type, ($size - 1));
+    }
+  }
+}
+
+@mixin display($size: 1, $isResponsive: false) {
+  @include font('display', $size, $isResponsive);
+  font-family: $font-family-serif;
+  letter-spacing: -0.04em;
+}
+
+@mixin title($size: 1, $isResponsive: false) {
+  @include font('title', $size, $isResponsive);
+  font-family: $font-family-serif;
+  letter-spacing: -0.02em;
+}
+
+@mixin eyebrow($size: 1, $isResponsive: false) {
+  @include font('eyebrow', $size, $isResponsive);
+}
+
+@mixin body-copy($size: 1, $isResponsive: false) {
+  @include font('body-copy', $size, $isResponsive);
+}
+
+@mixin link-text {
+  border-bottom: 1px solid color(raspberry);
+  transition: color 0.1s ease-in;
+
+  &:hover {
+    color: color(raspberry);
+    animation: glow 0.7s ease-out;
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 2rem rgba(color(raspberry), 0.85);
+    }
+    to {
+      text-shadow: 0 0 1rem rgba(color(raspberry), 0);
+    }
+  }
+}

@@ -1,15 +1,18 @@
-@import '../../index';
+@import '../../core';
 
 .nav {
   @include body-copy;
-
-  position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
   z-index: 2;
   background-color: color(white);
   margin-bottom: 2rem;
 
   @include above-breakpoint-md {
     margin-bottom: 4rem;
+    position: relative;
   };
 
   ul {

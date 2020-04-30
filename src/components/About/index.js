@@ -2,7 +2,15 @@ import React from 'react';
 
 const About = () => (
   <article className="article-content">
-    <h2 className="page-heading">About me</h2>
+    <h1 className="page-heading">About me</h1>
+    <h2>Work History</h2>
+    <ul>
+      <li>13 years in design work, 12 years web, 10+ years on product teams in tech</li>
+      <li>Worked at ModCloth when they were a Pittsburgh-based company and through their HQ move to San Francisco</li>
+      <li>Worked at a startup inc</li>
+      <li>Currently the most tenured employee in tech (eng, product, IT) at Stitch Fix</li>
+    </ul>
+
     <h3>At work</h3>
     <p>
       Life has taught me how to take worries and break them down into groups of a) things outside of my control, thus de-prioritized and b) smaller, actionable problems to solve.

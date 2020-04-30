@@ -16,7 +16,7 @@ function App() {
     <React.Fragment>
       <Header />
       <main className={style.content}>
-        <Router basepath={basePath} primary={false}>
+        <Router basepath={basePath}>
           <About path={`/`} />
           <Work path={`/work`} />
         </Router>

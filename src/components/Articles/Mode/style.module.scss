@@ -1,23 +1,4 @@
-@import "../../../index.scss";
-
-.pageHeading {
-  position: relative;
-  margin-bottom: 3rem;
-
-  &:first-child {
-    margin-top: 0;    
-  }
-
-  &::after {
-    content: '';
-    height: 0.125rem;
-    width: 3rem;
-    background-color: map-get($colors, grape);
-    position: absolute;
-    left: 0;
-    bottom: -0.25rem;
-  }
-}
+@import "../../../core.scss";
 
 .subtitle {
   color: color(gray, 3);

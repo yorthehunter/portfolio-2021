@@ -1,32 +1,9 @@
-@import "./index.scss";
+@import "./core.scss";
 
 .content {
-  padding: 4rem 1rem;
+  padding: 0 1rem 4rem;
 
   @include above-breakpoint-md {
-    padding: 4rem 2rem 4rem calc(375px + 2rem);
+    padding: 0 2rem 4rem calc(375px + 2rem);
   }
 }
-
-// Work
-
-.pageHeading {
-  position: relative;
-  margin-bottom: 3rem;
-
-  &::after {
-    content: '';
-    height: 0.125rem;
-    width: 3rem;
-    background-color: map-get($colors, grape);
-    position: absolute;
-    left: 0;
-    bottom: -0.25rem;
-  }
-}
-
-.subtitle {
-  color: color(gray, 3);
-}
-
-// End Work
