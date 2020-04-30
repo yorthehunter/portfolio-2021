@@ -5,6 +5,11 @@
 
   position: relative;
   margin-bottom: 4rem;
+  margin-top: 5rem;
+
+  @include above-breakpoint-md {
+    margin-top: 0;
+  }
 
   > .strategist {
     color: map-get($colors, raspberry);
