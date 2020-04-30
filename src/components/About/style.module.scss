@@ -1,0 +1,16 @@
+@import "../../core";
+
+.figure {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
+  margin: 2rem auto;
+
+  @include above-breakpoint-sm {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  > picture {
+
+  }
+}
