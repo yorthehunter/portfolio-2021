@@ -8,7 +8,10 @@ const Nav = () => (
   <nav className={style.nav}>
     <ul>
       <li>
-        <Link to={`${basePath}/`}>About</Link>{" "}
+        <Link to={`${basePath}/`}>Home</Link>
+      </li>
+      <li>
+        <Link to={`${basePath}/about`}>About</Link>
       </li>
       <li>
         <Link to={`${basePath}/work`}>Work</Link>

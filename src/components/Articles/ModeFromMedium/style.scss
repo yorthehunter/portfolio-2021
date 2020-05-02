@@ -1,0 +1,60 @@
+@import "../../../core.scss";
+
+.medium-article {
+
+  h3 {
+    @include title(2, true);
+  }
+
+  h4 {
+    @include title(3, true);
+  }
+
+  header {
+    max-width: 640px;
+    margin: auto;
+  }
+
+  section {
+    max-width: 640px;
+    margin: auto;
+  }
+
+  section img {
+    max-width: 100%;
+  }
+
+  figcaption {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: color(gray, 3);
+    margin: 0.5rem auto;
+    text-align: center;
+  }
+
+  figure {
+    margin: 1rem auto;
+  }
+
+  footer {
+    padding: 0 20px;
+    margin: 50px 0;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .aspectRatioPlaceholder {
+    max-width: auto !important;
+    max-height: auto !important;
+  }
+
+  .aspectRatioPlaceholder-fill {
+    padding-bottom: 0 !important;
+  }
+
+  header,
+  section[data-field=subtitle],
+  section[data-field=description] {
+    display: none;
+  }
+}

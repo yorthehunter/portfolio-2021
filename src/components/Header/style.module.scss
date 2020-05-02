@@ -7,6 +7,10 @@
   margin-bottom: 4rem;
   margin-top: 5rem;
 
+  &:hover {
+    animation: glowBig 1.4s ease-out;
+  }
+
   @include above-breakpoint-md {
     margin-top: 0;
   }

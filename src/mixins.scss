@@ -24,6 +24,8 @@
 
 @mixin eyebrow($size: 1, $isResponsive: false) {
   @include font('eyebrow', $size, $isResponsive);
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
 }
 
 @mixin body-copy($size: 1, $isResponsive: false) {
@@ -38,13 +40,22 @@
     color: color(raspberry);
     animation: glow 0.7s ease-out;
   }
+}
 
-  @keyframes glow {
-    from {
-      text-shadow: 0 0 2rem rgba(color(raspberry), 0.85);
-    }
-    to {
-      text-shadow: 0 0 1rem rgba(color(raspberry), 0);
-    }
+@keyframes glowBig {
+  from {
+    text-shadow: 0 0 6rem rgba(color(raspberry), 1);
+  }
+  to {
+    text-shadow: 0 0 1rem rgba(color(raspberry), 0);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 2rem rgba(color(raspberry), 0.85);
+  }
+  to {
+    text-shadow: 0 0 1rem rgba(color(raspberry), 0);
   }
 }

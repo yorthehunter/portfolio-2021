@@ -2,12 +2,14 @@ import React from 'react';
 import useClipboard from "react-use-clipboard";
 import Tooltip from '../Tooltip';
 import Nav from '../Nav';
+import { Link } from "@reach/router";
 import { ReactComponent as Checkmark } from '../../icon/checkmark.svg';
 import style from './style.module.scss'
 
-const Header = () => {
-  const EMAIL_ADDRESS = "boru.design@gmail.com";
+const basePath = process.env.PUBLIC_URL;
+const EMAIL_ADDRESS = "boru.design@gmail.com";
 
+const Header = () => {
   const [isCopied, setCopied] = useClipboard(EMAIL_ADDRESS, {
     successDuration: 2000
   });
@@ -15,11 +17,13 @@ const Header = () => {
   return (
     <header className={style.header}>
       <Nav />
-      <h1 className={style.superHeroHeading}>
-        Design Systems<br />
-        <span className={style.strategist}>Strategist</span> & <br className={style.optionalBreak} />
-        <span className={style.developer}>Developer</span>
-      </h1>
+      <Link to={`${basePath}/`}>
+        <h1 className={style.superHeroHeading}>
+          Design Systems<br />
+          <span className={style.strategist}>Strategist</span> & <br className={style.optionalBreak} />
+          <span className={style.developer}>Developer</span>
+        </h1>
+      </Link>
       <h2 className={style.myName}>Brian Cleveland</h2>
       <h3 className={style.myTitle}>
         Lead Designer, Design Platform<br />

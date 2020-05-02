@@ -1,15 +1,17 @@
 .article-content {
   color: color(gray, 1);
-  h1 { @include title(2, true); }
-  h2 { @include title(3, true); }
-  h3 { @include title(4, true); }
-  h4 { @include title(4, false); }
+  h1 { @include title(1, true); }
+  h2 { @include title(2, true); }
+  h3 { @include title(3, true); }
+  h4 { @include title(4, true); }
+  h5 { @include title(4, false); }
   p { @include body-copy(2, true); max-width: 42.5rem; }
 
   h1,
   h2,
   h3,
-  h4 {
+  h4,
+  h5 {
     margin-top: 2rem;
   }
 
@@ -23,22 +25,33 @@
   h3 + h4,
   h3 + p { margin-top: 0.5rem; }
 
+  h4 + h5,
   h4 + p { margin-top: 0.25rem; }
+
+    a {
+      @include link-text;
+    }
 
   ol {
     list-style: upper-roman;
+
+    li {
+      list-style: upper-roman;
+    }
   }
 
   ul {
     list-style: circle;
+
+    li {
+      list-style: circle;
+    }
   }
 
-  li {
-    list-style: circle;
-  }
 
   blockquote,
   ul,
+  ol,
   dl {
     @include body-copy(1);
     margin: 2rem auto;
@@ -49,7 +62,7 @@
   }
 
   dd {
-    font-style: italic;
+    // font-style: italic;
   }
 
   dd + dd {

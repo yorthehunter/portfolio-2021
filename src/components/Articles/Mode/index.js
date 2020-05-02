@@ -3,7 +3,6 @@ import style from './style.module.scss';
 
 const ModeArticle = () => (
   <article className="article-content">
-    <h1 className="page-heading">Highlighted work</h1>
     <h2>Introducing the Mode Design System</h2>
     <h3 className="subtitle">Building a shared experience language at Stitch Fix</h3>
     <blockquote>
@@ -17,7 +16,7 @@ const ModeArticle = () => (
     <p>The <strong>Mode Design System</strong> was created to support higher quality digital products that are compelling, consistent, and inclusive for everybody. The Stitch Fix client experience is the heart of this goal, but the design system is used and informed by product teams who create these wonderful digital products.</p>
     <p>It's been my privilege to help create, kick off, and grow the Stitch Fix design system over the past year.</p>
     <h3>A Brief History</h3>
-    <p>The design system was an idea in the making for years before the true <em>problem to solve</em> coalesced and before we were given the runway to make it a major strategic initiative. Eventually, with the support of leadership, we were able to form a new team called the Design Platform team. Design Platform would focus on scaling the design of enterprise products by providing product teams with systemic guidance, tooling, automation, and process improvements. The design system would be our primary product.</p>
+    <p>The design system was an idea in the making for years before the true <em>problem to solve</em> coalesced and before we were given the runway to make it a major strategic initiative. Eventually, with the support of leadership, we were able to form a new team called the Design Platform team. Design Platform would focus on scaling the design of Stitch Fix products by providing product teams with systemic guidance, tooling, automation, and process improvements. The design system would be our primary product.</p>
     <h3>So What Problem Are We Trying to Solve?</h3>
     <p><em>How will we continue to design and build consistent, engaging products at scale?</em></p>
     <blockquote>You could outline our org chart in the inconsistencies between product experiences.</blockquote>
