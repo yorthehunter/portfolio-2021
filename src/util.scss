@@ -32,22 +32,11 @@
       @include link-text;
     }
 
-  ol {
-    list-style: upper-roman;
-
-    li {
-      list-style: upper-roman;
-    }
+  ol > li,
+  ul > li {
+    list-style: inside;
+    display: list-item;
   }
-
-  ul {
-    list-style: circle;
-
-    li {
-      list-style: circle;
-    }
-  }
-
 
   blockquote,
   ul,
@@ -71,13 +60,14 @@
 
   blockquote {
     position: relative;
+    padding-left: 1rem;
 
     &::before {
       content: '';
       position: absolute;
       top: 0;
       bottom:0;
-      left: -0.75rem;
+      left: 0;
       width: 0.25rem;
       background-color: color(gray, 5);
     }
