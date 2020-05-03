@@ -4,7 +4,11 @@ import Collage from './Collage';
 const About = () => (
   <article className="article-content">
     <h2 className="page-heading">About me</h2>
-    <p>I have a history in both product design and product development, which has led me towards working on problems of scaling design, UI, and front end systems. Design systems are a strategic solution to these problems that addresses UI consistency and scope, inter-team communication, front end systems interoperability (via APIs & platform-agnostic UI), best practices and documentation, and other strategies for scaling product teams.</p>
+    <p>
+    <strong>13 years of design, 12 years in web design, 10+ on tech product teams</strong>
+    <br />
+    <br />
+    I have a history in both product design and product development, which has led me towards working on problems of scaling design, UI, and front end systems and teams. Design systems are a strategic solution to these problems that addresses UI consistency and scope, inter-team communication, front end systems interoperability (via APIs & platform-agnostic UI), best practices and documentation, and other strategies for scaling product teams.</p>
     <p>I have helped Stitch Fix grow from a startup with fewer than 40 employees into a public company of > 6000; growing from shipping 40k fixes to about 60 million.</p>
     <h3>What is Design Systems Strategy and Development?</h3>
     <h4>Leadership</h4>
