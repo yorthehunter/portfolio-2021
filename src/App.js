@@ -4,7 +4,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Work from './components/Work';
 import Test from './components/Test';
-import ModeArticle from './components/Articles/ModeFromMedium ';
+import ModeMediumPost from './components/Articles/ModeMediumPost';
 import { Router } from "@reach/router"
 
 const Home = () => (
@@ -21,10 +21,6 @@ const Home = () => (
   </article>
 );
 
-// const Work = () => (
-//   <ModeArticle />
-// );
-
 function App() {
   const basePath = process.env.PUBLIC_URL;
 
@@ -36,7 +32,7 @@ function App() {
           <Home path={`/`} />
           <About path={`/about`} />
           <Work path={`/work`} />
-          <ModeArticle path={`/work/mode`} />
+          <ModeMediumPost path={`/work/mode`} />
           <Test path={`/test`} />
         </Router>
       </main>

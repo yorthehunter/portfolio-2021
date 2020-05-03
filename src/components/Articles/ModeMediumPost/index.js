@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
 
-const ModeFromMedium = () => (
+const ModeMediumPost = () => (
   <div className="medium-article article-content">
     <article class="h-entry">
       <header>
@@ -195,4 +195,4 @@ const ModeFromMedium = () => (
   </div>
 );
 
-export default ModeFromMedium;
+export default ModeMediumPost;
