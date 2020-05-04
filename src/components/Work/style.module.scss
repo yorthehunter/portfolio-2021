@@ -1,0 +1,23 @@
+@import "../../core";
+
+.highlight {
+  margin: 4rem auto;
+  position: relative;
+  padding-left: 2rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    width: 0.5rem;
+    background-color: color(raspberry);
+  }
+
+  &:nth-child(odd) {
+    &::before {
+      background-color: color(grape);
+    }
+  }
+}

@@ -1,5 +1,8 @@
 import React from 'react';
+import { Link } from '@reach/router';
 import './style.scss';
+
+const basePath = process.env.PUBLIC_URL;
 
 const ModeMediumPost = () => (
   <div className="medium-article article-content">
@@ -16,6 +19,7 @@ const ModeMediumPost = () => (
             <hr class="section-divider" />
           </div>
           <div class="section-content">
+            <nav><p><Link to={`${basePath}/work`}>« Work Highlights</Link></p></nav>
             <div class="section-inner sectionLayout--insetColumn">
               <h3 name="4618" id="4618" class="graf graf--h3 graf--leading graf--title">Introducing the Mode Design System</h3>
               <h4 name="edab" id="edab" class="graf graf--h4 graf-after--h3 graf--subtitle subtitle">Building a shared experience language at Stitch Fix</h4>
