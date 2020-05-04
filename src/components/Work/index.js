@@ -9,7 +9,7 @@ const Work = () => (
     <h2 className="page-heading">Work Highlights</h2>
     <section className={style.highlight}>
       <h3>Mode Design System</h3>
-      <p>The Mode Design System is a set of tools, automation, guidelines, and more that enables consistent and scalable UI at Stitch Fix. Mode is my most ambitious and influencial product at Stitch Fix, currently supporting the entire customer-facing experience and those product teams. The current steps in motion are to apply the design system to expert use (internal) tools at Stitch Fix, too.</p>
+      <p>The Mode Design System is a set of tools, automation, guidelines, and more that enables consistent and scalable UI at Stitch Fix. Mode is my most ambitious and influencial product at Stitch Fix, currently supporting the entire customer-facing experience and those product teams. We are currently in the process of applying the design system to expert use (internal) tools at Stitch Fix, too.</p>
       <p><Link to={`${basePath}/work/mode`}>Read my article about creating Mode »</Link></p>
       <h4>Highlights</h4>
       <ul>
@@ -17,7 +17,7 @@ const Work = () => (
         <li>Created a strategy and delivering a design system for customer-facing applications at Stitch Fix</li>
         <li>Designed and helped build a style system: Sass mixins + variables as a single-source code repository for Stitch Fix UI</li>
         <li>Created a system for employing design token (individual units of design) in order to create a simpler, design-led process for managing cross-platform UI</li>
-        <li>Mode is currently employed by 8+ teams (~80 engineers)</li>
+        <li>Mode is currently employed by 8+ teams (~80 engineers and managers, 8+ PMs, 12 designers)</li>
         <li>Recently scoped to expand to expert-use / internal tools (initially 3+ teams, potentially several more)</li>
       </ul>
     </section>
@@ -27,9 +27,10 @@ const Work = () => (
       <h4>Highlights</h4>
       <ul>
         <li>Developed to empower engineers to more rapidly create UI</li>
-        <li>Modern CSS</li>
-        <li>A React library that helped set UI standards for my team</li>
-        <li>I was the first "front end engineer" at Stitch Fix, helping us begin a process of specialization and platformization of front end and design</li>
+        <li>A variable-based simple and functional design system for constraining UI options and easing development</li>
+        <li>A UI React library with full test coverage</li>
+        <li>Helped create standards for front end code on my team</li>
+        <li>I was the first front end engineer at Stitch Fix, helping us begin a process of specialization and platformization of front end and design</li>
       </ul>
     </section>
     <section className={style.highlight}>
@@ -38,8 +39,9 @@ const Work = () => (
       <h4>Highlights</h4>
       <ul>
         <li>Responsible for the design of the UI as well as the physical pick cart</li>
-        <li>Employed guerilla-style user testing, using a head-mounted GoPro to "experience" several users' picking perspectives</li>
+        <li>Employed guerilla-style user testing, using a head-mounted GoPro to "experience" several users' picking perspectives, paper prototypes, more</li>
         <li>Led a design team of two while mentoring an excellent junior designer</li>
+        <li>Employed animation and visual hierarchy to accommodate a variety of users and conditions (low light, tall user, walking with a chrome book, etc)</li>
       </ul>
     </section>
     <section className={style.highlight}>
@@ -48,6 +50,7 @@ const Work = () => (
       <h4>Highlights</h4>
       <ul>
         <li>Hands-on user testing, involving prototyping a physical redesign of a space</li>
+        <li>Involved testing the hand scanner, too, so I set up a "recreation" of a returns space in my home office</li>
         <li>My second version of returns management at Stitch Fix; my first was the very first UI for returns processing</li>
       </ul>
     </section>
