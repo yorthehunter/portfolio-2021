@@ -1,29 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.1b3e730c.chunk.css",
-    "main.js": "/static/js/main.b7b8b70d.chunk.js",
-    "main.js.map": "/static/js/main.b7b8b70d.chunk.js.map",
+    "main.css": "/static/css/main.1cf366a8.chunk.css",
+    "main.js": "/static/js/main.04b8d941.chunk.js",
+    "main.js.map": "/static/js/main.04b8d941.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ceaf4b5f.js",
     "runtime-main.js.map": "/static/js/runtime-main.ceaf4b5f.js.map",
-    "static/js/2.23f37134.chunk.js": "/static/js/2.23f37134.chunk.js",
-    "static/js/2.23f37134.chunk.js.map": "/static/js/2.23f37134.chunk.js.map",
+    "static/js/2.b6e1b0db.chunk.js": "/static/js/2.b6e1b0db.chunk.js",
+    "static/js/2.b6e1b0db.chunk.js.map": "/static/js/2.b6e1b0db.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.fcf25a75fc4036d8937d3618ebcf8b67.js": "/precache-manifest.fcf25a75fc4036d8937d3618ebcf8b67.js",
+    "precache-manifest.9d216d9de73c01fd2867824434a5562b.js": "/precache-manifest.9d216d9de73c01fd2867824434a5562b.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.1b3e730c.chunk.css.map": "/static/css/main.1b3e730c.chunk.css.map",
-    "static/js/2.23f37134.chunk.js.LICENSE.txt": "/static/js/2.23f37134.chunk.js.LICENSE.txt",
+    "static/css/main.1cf366a8.chunk.css.map": "/static/css/main.1cf366a8.chunk.css.map",
+    "static/js/2.b6e1b0db.chunk.js.LICENSE.txt": "/static/js/2.b6e1b0db.chunk.js.LICENSE.txt",
     "static/media/checkmark.82e166eb.svg": "/static/media/checkmark.82e166eb.svg",
     "static/media/family-1-sm.jpg": "/static/media/family-1-sm.e1bf1ac2.jpg",
     "static/media/family-1.jpg": "/static/media/family-1.50fb9c98.jpg",
     "static/media/family-2-sm.jpg": "/static/media/family-2-sm.bde277f9.jpg",
     "static/media/family-2.jpg": "/static/media/family-2.a102f0d2.jpg",
     "static/media/family-3-sm.jpg": "/static/media/family-3-sm.d8096f7d.jpg",
-    "static/media/family-3.jpg": "/static/media/family-3.01f7d817.jpg"
+    "static/media/family-3.jpg": "/static/media/family-3.01f7d817.jpg",
+    "static/media/gozer-2.png": "/static/media/gozer-2.3083cabe.png",
+    "static/media/mode-2.png": "/static/media/mode-2.8c13437f.png",
+    "static/media/mode-3.png": "/static/media/mode-3.d3340ef2.png",
+    "static/media/returns-1.jpg": "/static/media/returns-1.9f0fd8b4.jpg",
+    "static/media/weave-1.png": "/static/media/weave-1.922c2e8a.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ceaf4b5f.js",
-    "static/js/2.23f37134.chunk.js",
-    "static/css/main.1b3e730c.chunk.css",
-    "static/js/main.b7b8b70d.chunk.js"
+    "static/js/2.b6e1b0db.chunk.js",
+    "static/css/main.1cf366a8.chunk.css",
+    "static/js/main.04b8d941.chunk.js"
   ]
 }
