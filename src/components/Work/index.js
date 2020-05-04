@@ -1,6 +1,12 @@
 import React from 'react';
 import { Link } from '@reach/router';
 import style from './style.module.scss';
+import modeImg from './mode-2.png';
+import modeImg2 from './mode-3.png';
+import weaveImg from './weave-1.png';
+import gozerImg from './gozer-2.png';
+import returnsImg from './returns-1.jpg';
+import Figure from '../Figure';
 
 const basePath = process.env.PUBLIC_URL;
 
@@ -20,6 +26,10 @@ const Work = () => (
         <li>Mode is currently employed by 8+ teams (~80 engineers and managers, 8+ PMs, 12 designers)</li>
         <li>Recently scoped to expand to expert-use / internal tools (initially 3+ teams, potentially several more)</li>
       </ul>
+      <p>
+        <Figure imgSrc={modeImg} caption="A screen shot of the Mode style system documentation site" />
+        <Figure imgSrc={modeImg2} caption="A screen shot of the Mode Figma library" />
+      </p>
     </section>
     <section className={style.highlight}>
       <h3>Weave UI framework</h3>
@@ -32,6 +42,9 @@ const Work = () => (
         <li>Helped create standards for front end code on my team</li>
         <li>I was the first front end engineer at Stitch Fix, helping us begin a process of specialization and platformization of front end and design</li>
       </ul>
+      <p>
+        <Figure imgSrc={weaveImg} caption="A screen shot of the Weave React library documentation site" />
+      </p>
     </section>
     <section className={style.highlight}>
       <h3>Gozer: a modern and customized picking application</h3>
@@ -43,6 +56,9 @@ const Work = () => (
         <li>Led a design team of two while mentoring an excellent junior designer</li>
         <li>Employed animation and visual hierarchy to accommodate a variety of users and conditions (low light, tall user, walking with a chrome book, etc)</li>
       </ul>
+      <p>
+        <Figure imgSrc={gozerImg} caption="Final design from the Gozer picking app" />
+      </p>
     </section>
     <section className={style.highlight}>
       <h3>Redesigning returns management</h3>
@@ -53,6 +69,9 @@ const Work = () => (
         <li>Involved testing the hand scanner, too, so I set up a "recreation" of a returns space in my home office</li>
         <li>My second version of returns management at Stitch Fix; my first was the very first UI for returns processing</li>
       </ul>
+      <p>
+        <Figure imgSrc={returnsImg} caption="Final design from the Returns v2 app" />
+      </p>
     </section>
   </article>
 );

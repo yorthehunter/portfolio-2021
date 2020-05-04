@@ -1,0 +1,16 @@
+@import "../../core";
+
+.figure {
+  margin: 2rem auto;
+
+  > img {
+    max-width: 100%;
+  }
+
+  figcaption {
+    @include body-copy(2);
+    text-align: center;
+    color: color(gray, 3);
+    font-style: italic;
+  }
+}
