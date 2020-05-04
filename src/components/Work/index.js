@@ -15,7 +15,7 @@ const Work = () => (
     <h2 className="page-heading">Work Highlights</h2>
     <section className={style.highlight}>
       <h3>Mode Design System</h3>
-      <p>The Mode Design System is a set of tools, automation, guidelines, and more that enables consistent and scalable UI at Stitch Fix. Mode is my most ambitious and influencial product at Stitch Fix, currently supporting the entire customer-facing experience and those product teams. We are currently in the process of applying the design system to expert use (internal) tools at Stitch Fix, too.</p>
+      <p>The Mode Design System is a set of tools, automation, guidelines, and more that enables consistent and scalable UI at Stitch Fix. Mode is my most ambitious and influential product at Stitch Fix, currently supporting the entire customer-facing experience and those product teams. We are currently in the process of applying the design system to expert use (internal) tools at Stitch Fix, too.</p>
       <p><Link to={`${basePath}/work/mode`}>Read my article about creating Mode »</Link></p>
       <h4>Highlights</h4>
       <ul>
