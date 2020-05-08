@@ -6,7 +6,6 @@ import { Link } from "@reach/router";
 import { ReactComponent as Checkmark } from '../../icon/checkmark.svg';
 import style from './style.module.scss'
 
-const basePath = process.env.PUBLIC_URL;
 const EMAIL_ADDRESS = "boru.design@gmail.com";
 
 const Header = () => {
@@ -17,7 +16,7 @@ const Header = () => {
   return (
     <header className={style.header}>
       <Nav />
-      <Link to={`${basePath}/`}>
+      <Link to={`/`}>
         <h1 className={style.superHeroHeading}>
           Design Systems<br />
           <span className={style.strategist}>Strategist</span> & <br className={style.optionalBreak} />
