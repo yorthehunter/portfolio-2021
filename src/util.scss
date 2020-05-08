@@ -104,10 +104,17 @@
       position: absolute;
       left: 0;
       bottom: -0.25rem;
+      animation: slideIn 0.3s ease-out;
     }
   }
 
   .subtitle {
     color: color(gray, 3);
   }
+}
+
+@keyframes slideIn {
+  0%   { left: 5rem; }
+  75%  { left: -.5rem; }
+  100% { left: 0; }
 }
