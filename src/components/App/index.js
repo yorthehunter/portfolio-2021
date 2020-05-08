@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './app.module.scss'
+import style from './style.module.scss'
 import Header from '../Header';
 import About from '../About';
 import Work from '../Work';
