@@ -24,6 +24,7 @@
   align-items: center;
   justify-content: center;
   cursor: sw-resize;
+  z-index: 2;
 
   > img {
     max-width: 94vw;

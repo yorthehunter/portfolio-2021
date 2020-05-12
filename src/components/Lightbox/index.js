@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import style from './style.module.scss';
 
-const Lightbox = ({ src, srcSet, zoomedImg, alt }) => {
+const Lightbox = ({ src, srcSet, zoomedImg, alt, ...otherProps }) => {
   const [lightboxOpen, openBox] = useState(false);
 
   return (
@@ -16,7 +16,7 @@ const Lightbox = ({ src, srcSet, zoomedImg, alt }) => {
       <button className={style.image} onClick={() => openBox(!lightboxOpen)}>
         <picture>
           <source media="(max-width: 560px)" srcSet={srcSet} />
-          <img src={src} alt={alt} />
+          <img src={src} alt={alt} {...otherProps} />
         </picture>
       </button>
     </div>

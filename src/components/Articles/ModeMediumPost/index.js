@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from '@reach/router';
+import Lightbox from '../../Lightbox';
 import './style.scss';
 
 const ModeMediumPost = () => (
@@ -27,7 +28,8 @@ const ModeMediumPost = () => (
             <div className="section-inner sectionLayout--outsetColumn">
               <figure name="3527" id="3527" className="graf graf--figure graf--layoutOutsetCenter graf-after--h4">
                 <div className="aspectRatioPlaceholder is-locked" style={{maxWidth: '1192px', maxHeight: '335px'}}>
-                  <div className="aspectRatioPlaceholder-fill" style={{paddingBottom: '28.1%'}}></div><img className="graf-image" data-image-id="1*QyZDPuBjfzj8syeEryFt4A.png" data-width="2040" data-height="573" data-focus-x="10" data-focus-y="19"
+                  <div className="aspectRatioPlaceholder-fill" style={{paddingBottom: '28.1%'}}></div>
+                  <Lightbox className="graf-image" data-image-id="1*QyZDPuBjfzj8syeEryFt4A.png" data-width="2040" data-height="573" data-focus-x="10" data-focus-y="19"
                     data-is-featured="true" alt="A screenshot of a sampling of colors from the Mode color palette" src="https://cdn-images-1.medium.com/max/1200/1*QyZDPuBjfzj8syeEryFt4A.png" />
                 </div>
                 <figcaption className="imageCaption">Some of the colors from the Mode color palette</figcaption>
@@ -45,7 +47,8 @@ const ModeMediumPost = () => (
               <p name="1e45" id="1e45" className="graf graf--p graf-after--p">But—rooted in these values—our teams were beyond ready to accept a new way of working together under guidance from the Mode Design System. </p>
               <figure name="84be" id="84be" className="graf graf--figure graf-after--p">
                 <div className="aspectRatioPlaceholder is-locked" style={{maxWidth: '590px', maxHeight: '524px'}}>
-                  <div className="aspectRatioPlaceholder-fill" style={{paddingBottom: '88.8%'}}></div><img className="graf-image" data-image-id="1*lLXXqOyL3_e3hYPAYj9eWg.png" data-width="590" data-height="524"
+                  <div className="aspectRatioPlaceholder-fill" style={{paddingBottom: '88.8%'}}></div>
+                    <Lightbox className="graf-image" data-image-id="1*lLXXqOyL3_e3hYPAYj9eWg.png" data-width="590" data-height="524"
                     alt="The Stitch Fix OS: guidelines for company culture. E.g. Our people are bright, kind, and motivated by challenge." src="https://cdn-images-1.medium.com/max/800/1*lLXXqOyL3_e3hYPAYj9eWg.png" />
                 </div>
                 <figcaption className="imageCaption">The Stitch Fix OS guides how we work together</figcaption>
@@ -65,7 +68,8 @@ const ModeMediumPost = () => (
                 communicated about design. If we could set up the foundation for standards and practices, communication, and feedback, we could develop the <em className="markup--em markup--p-em">experience language</em> of Stitch Fix.</p>
               <figure name="3c0b" id="3c0b" className="graf graf--figure graf-after--p">
                 <div className="aspectRatioPlaceholder is-locked" style={{maxWidth: '700px', maxHeight: '364px'}}>
-                  <div className="aspectRatioPlaceholder-fill" style={{paddingBottom: '51.9%'}}></div><img className="graf-image" data-image-id="1*ZwlAJNfj7LsIx-cw-1rNig.png" data-width="1113" data-height="578"
+                  <div className="aspectRatioPlaceholder-fill" style={{paddingBottom: '51.9%'}}></div>
+                    <Lightbox className="graf-image" data-image-id="1*ZwlAJNfj7LsIx-cw-1rNig.png" data-width="1113" data-height="578"
                     alt="A design audit that shows multiple versions of “How It Works” steps in the UI" src="https://cdn-images-1.medium.com/max/800/1*ZwlAJNfj7LsIx-cw-1rNig.png" />
                 </div>
                 <figcaption className="imageCaption">Reinventing the wheel: half a dozen different ways to say the same thing, built by 6 different teams</figcaption>
@@ -92,7 +96,8 @@ const ModeMediumPost = () => (
                 nature of the tool.</p>
               <figure name="d919" id="d919" className="graf graf--figure graf-after--p">
                 <div className="aspectRatioPlaceholder is-locked" style={{maxWidth: '700px', maxHeight: '395px'}}>
-                  <div className="aspectRatioPlaceholder-fill" style={{paddingBottom: '56.49999999999999%'}}></div><img className="graf-image" data-image-id="1*qViiwSy9s-svx0ubynBz5Q.png" data-width="2340" data-height="1322"
+                  <div className="aspectRatioPlaceholder-fill" style={{paddingBottom: '56.49999999999999%'}}></div>
+                    <Lightbox className="graf-image" data-image-id="1*qViiwSy9s-svx0ubynBz5Q.png" data-width="2340" data-height="1322"
                     alt="Screenshots of Figma with UI components and collaboration highlighted" src="https://cdn-images-1.medium.com/max/800/1*qViiwSy9s-svx0ubynBz5Q.png" />
                 </div>
                 <figcaption className="imageCaption">Cross-functional collaboration via Figma</figcaption>
@@ -110,7 +115,8 @@ const ModeMediumPost = () => (
               <p name="c7c9" id="c7c9" className="graf graf--p graf-after--p">And so, the <strong className="markup--strong markup--p-strong">Mode Style System</strong> was born.</p>
               <figure name="4fda" id="4fda" className="graf graf--figure graf-after--p">
                 <div className="aspectRatioPlaceholder is-locked" style={{maxWidth: '700px', maxHeight: '90px'}}>
-                  <div className="aspectRatioPlaceholder-fill" style={{paddingBottom: '12.9%'}}></div><img className="graf-image" data-image-id="1*ipVs2tOmhFvkvrWviOs1cA.png" data-width="1612" data-height="208"
+                  <div className="aspectRatioPlaceholder-fill" style={{paddingBottom: '12.9%'}}></div>
+                    <Lightbox className="graf-image" data-image-id="1*ipVs2tOmhFvkvrWviOs1cA.png" data-width="1612" data-height="208"
                     alt="A screenshot of a CTA button in Mode and the code example to render it" src="https://cdn-images-1.medium.com/max/800/1*ipVs2tOmhFvkvrWviOs1cA.png" />
                 </div>
                 <figcaption className="imageCaption">From the code documentation, visualizing and explaining how to render a CTA button</figcaption>
@@ -121,7 +127,8 @@ const ModeMediumPost = () => (
               <h3 name="6aec" id="6aec" className="graf graf--h3 graf-after--blockquote">Tailored to Stitch Fix</h3>
               <figure name="70a6" id="70a6" className="graf graf--figure graf-after--h3">
                 <div className="aspectRatioPlaceholder is-locked" style={{maxWidth: '700px', maxHeight: '101px'}}>
-                  <div className="aspectRatioPlaceholder-fill" style={{paddingBottom: '14.399999999999999%'}}></div><img className="graf-image" data-image-id="1*ktCdOmAJ5AlCPTKX_pPwJA.png" data-width="803" data-height="116"
+                  <div className="aspectRatioPlaceholder-fill" style={{paddingBottom: '14.399999999999999%'}}></div>
+                    <Lightbox className="graf-image" data-image-id="1*ktCdOmAJ5AlCPTKX_pPwJA.png" data-width="803" data-height="116"
                     alt="A screen shot of four versions of icons from our icon set" src="https://cdn-images-1.medium.com/max/800/1*ktCdOmAJ5AlCPTKX_pPwJA.png" />
                 </div>
                 <figcaption className="imageCaption">A sampling of our custom icon set</figcaption>
@@ -155,7 +162,8 @@ const ModeMediumPost = () => (
                   target="_blank">Ben Ilegbodu</a></blockquote>
               <figure name="bf4e" id="bf4e" className="graf graf--figure graf-after--blockquote graf--trailing">
                 <div className="aspectRatioPlaceholder is-locked" style={{maxWidth: '700px', maxHeight: '700px'}}>
-                  <div className="aspectRatioPlaceholder-fill" style={{paddingBottom: '100%'}}></div><img className="graf-image" data-image-id="0*20k6meB37LC5IA9E" data-width="4912" data-height="4912" data-unsplash-photo-id="cU2lda3kbls"
+                  <div className="aspectRatioPlaceholder-fill" style={{paddingBottom: '100%'}}></div>
+                    <img className="graf-image" data-image-id="0*20k6meB37LC5IA9E" data-width="4912" data-height="4912" data-unsplash-photo-id="cU2lda3kbls"
                     alt="A camera that has been taken apart and all pieces carefully organized" src="https://cdn-images-1.medium.com/max/800/0*20k6meB37LC5IA9E" />
                 </div>
               </figure>

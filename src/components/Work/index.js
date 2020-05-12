@@ -26,8 +26,8 @@ const Work = () => (
         <li>Recently scoped to expand to expert-use / internal tools (initially 3+ teams, potentially several more)</li>
       </ul>
       <p>
-        <Figure imgSrc={modeImg} caption="A screen shot of the Mode style system documentation site" />
-        <Figure imgSrc={modeImg2} caption="A screen shot of the Mode Figma library" />
+        <Figure asLightbox imgSrc={modeImg} caption="A screen shot of the Mode style system documentation site" />
+        <Figure asLightbox imgSrc={modeImg2} caption="A screen shot of the Mode Figma library" />
       </p>
     </section>
     <section className={style.highlight}>
@@ -42,7 +42,7 @@ const Work = () => (
         <li>I was the first front end engineer at Stitch Fix, helping us begin a process of specialization and platformization of front end and design</li>
       </ul>
       <p>
-        <Figure imgSrc={weaveImg} caption="A screen shot of the Weave React library documentation site" />
+        <Figure asLightbox imgSrc={weaveImg} caption="A screen shot of the Weave React library documentation site" />
       </p>
     </section>
     <section className={style.highlight}>
@@ -56,7 +56,7 @@ const Work = () => (
         <li>Employed animation and visual hierarchy to accommodate a variety of users and conditions (low light, tall user, walking with a chrome book, etc)</li>
       </ul>
       <p>
-        <Figure imgSrc={gozerImg} caption="Final design from the Gozer picking app" />
+        <Figure asLightbox imgSrc={gozerImg} caption="Final design from the Gozer picking app" />
       </p>
     </section>
     <section className={style.highlight}>
@@ -69,7 +69,7 @@ const Work = () => (
         <li>My second version of returns management at Stitch Fix; my first was the very first UI for returns processing</li>
       </ul>
       <p>
-        <Figure imgSrc={returnsImg} caption="Final design from the Returns v2 app" />
+        <Figure asLightbox imgSrc={returnsImg} caption="Final design from the Returns v2 app" />
       </p>
     </section>
   </article>
