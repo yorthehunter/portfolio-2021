@@ -6,17 +6,6 @@ $breakpoint-md: 900px;
 $breakpoint-lg: 1140px;
 $breakpoint-xl: 1730px;
 
-// Legacy breakpoints to replace FESK media queries. These breakpoints
-// transition layouts at device sizes, which often results in serving poorly
-// designed layouts to devices near but not on the breakpoint. Use these
-// variables with the above-breakpoint and below-breakpoint mixins only to aid
-// migration away from FESK — do not use them in new designs.
-$breakpoint-legacy-xxs: 360px;
-$breakpoint-legacy-xs: 480px;
-$breakpoint-legacy-sm: 768px;
-$breakpoint-legacy-md: 993px;
-$breakpoint-legacy-lg: 1200px;
-
 @mixin above-breakpoint($breakpoint) {
   @media screen and (min-width: $breakpoint) {
     @content;

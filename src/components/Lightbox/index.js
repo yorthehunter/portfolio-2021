@@ -15,7 +15,7 @@ const Lightbox = ({ src, srcSet, zoomedImg, alt, ...otherProps }) => {
       }
       <button className={style.image} onClick={() => openBox(!lightboxOpen)}>
         <picture>
-          <source media="(max-width: 560px)" srcSet={srcSet} />
+          <source media="(max-width: 900px)" srcSet={srcSet} />
           <img src={src} alt={alt} {...otherProps} />
         </picture>
       </button>
