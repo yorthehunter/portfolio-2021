@@ -1,0 +1,32 @@
+@import '../../core';
+
+.image {
+  transition: outline-offset 0.1s;
+  outline-offset: -1px;
+
+  &:hover {
+    outline: 1px solid color(raspberry);
+    outline-offset: 0.125rem;
+  }
+}
+
+.zoomedImage {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.7);
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: sw-resize;
+
+  > img {
+    max-width: 94vw;
+    max-height: 98vh;
+  }
+}

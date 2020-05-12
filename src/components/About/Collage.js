@@ -1,4 +1,5 @@
 import React from 'react';
+import Lightbox from '../Lightbox';
 import family1 from './family-1.jpg';
 import family2 from './family-2.jpg';
 import family3 from './family-3.jpg';
@@ -9,18 +10,9 @@ import style from './style.module.scss';
 
 const Collage = ({ caption }) => (
   <figure className={style.figure}>
-    <picture>
-      <source media="(max-width: 560px)" srcset={`${family1sm} 380w`} />
-      <img src={family1} alt="Jax and I" />
-    </picture>
-    <picture>
-      <source media="(max-width: 560px)" srcset={`${family2sm} 380w`} />
-      <img src={family2} alt="Ezra and Avi" />
-    </picture>
-    <picture>
-      <source media="(max-width: 560px)" srcset={`${family3sm} 380w`} />
-      <img src={family3} alt="Anna, Ezra, Jax" />
-    </picture>
+    <Lightbox src={family1} alt="Jax and I" srcSet={`${family1sm} 380w`} />
+    <Lightbox src={family2} alt="Ezra and Avi" srcSet={`${family2sm} 380w`} />
+    <Lightbox src={family3} alt="Anna, Ezra, Jax" srcSet={`${family3sm} 380w`} />
     { caption && <figcaption>{caption}</figcaption> }
   </figure>
 );
