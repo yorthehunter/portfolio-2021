@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b33d3b122e24ec2301e81d4146bd1e22",
+    "revision": "b42d0aaa1a98fff2bd986f2a136607fa",
     "url": "/index.html"
   },
   {
-    "revision": "9c6d5154786b6af209cb",
-    "url": "/static/css/main.10ca86b8.chunk.css"
+    "revision": "74b6c21d5fca7c11b7ad",
+    "url": "/static/css/main.2b80ec68.chunk.css"
   },
   {
-    "revision": "a20078ad3780ec2e5cd1",
-    "url": "/static/js/2.1684f787.chunk.js"
+    "revision": "70ac22485750b4ec283d",
+    "url": "/static/js/2.2076fa00.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/static/js/2.1684f787.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.2076fa00.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9c6d5154786b6af209cb",
-    "url": "/static/js/main.792d707b.chunk.js"
+    "revision": "74b6c21d5fca7c11b7ad",
+    "url": "/static/js/main.c38449e4.chunk.js"
   },
   {
     "revision": "967a46d8b67e4e01db1f",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "82e166ebd4e0d92846e3123b813946ce",
     "url": "/static/media/checkmark.82e166eb.svg"
+  },
+  {
+    "revision": "c2d3e57bcac04ae88ac5ebf35b255c3d",
+    "url": "/static/media/cup.c2d3e57b.svg"
   },
   {
     "revision": "e1bf1ac2042aab110f6f645b37de66b6",
@@ -56,6 +60,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/gozer-2.3083cabe.png"
   },
   {
+    "revision": "b9766a634b0bf6d2317acadbacdf8999",
+    "url": "/static/media/lightbulb.b9766a63.svg"
+  },
+  {
     "revision": "8c13437f4978d432de09738dcfc42133",
     "url": "/static/media/mode-2.8c13437f.png"
   },
@@ -70,5 +78,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "922c2e8ab061803d5995c164834b1690",
     "url": "/static/media/weave-1.922c2e8a.png"
+  },
+  {
+    "revision": "dd1e5aa07b8c9adabe152d68a37480ca",
+    "url": "/static/media/web-design.dd1e5aa0.svg"
   }
 ]);
