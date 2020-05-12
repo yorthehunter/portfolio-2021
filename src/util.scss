@@ -111,6 +111,18 @@
   .subtitle {
     color: color(gray, 3);
   }
+
+  .breadcrumb {
+    margin-top: 0.25rem;
+    
+    a {
+      color: color(gray, 3);
+      border: 0;
+      padding: 0.25rem;
+      display: inline-flex;
+      text-decoration: underline;
+    }
+  }
 }
 
 @keyframes slideIn {

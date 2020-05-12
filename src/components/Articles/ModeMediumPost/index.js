@@ -17,7 +17,9 @@ const ModeMediumPost = () => (
             <hr className="section-divider" />
           </div>
           <div className="section-content">
-            <nav><p><Link to={`/work`}>« Work Highlights</Link></p></nav>
+            <nav className="breadcrumb">
+              <Link to={`/work`}>« Work Highlights</Link>
+            </nav>
             <div className="section-inner sectionLayout--insetColumn">
               <h3 name="4618" id="4618" className="graf graf--h3 graf--leading graf--title">Introducing the Mode Design System</h3>
               <h4 name="edab" id="edab" className="graf graf--h4 graf-after--h3 graf--subtitle subtitle">Building a shared experience language at Stitch Fix</h4>
@@ -166,9 +168,9 @@ const ModeMediumPost = () => (
           </div>
           <div className="section-content">
             <div className="section-inner sectionLayout--insetColumn">
-              <p>
+              
                 <ol className="postList">
-                  <li name="b016" id="b016" className="graf graf--li graf--leading">(Original definition edited out of final draft, but here is a solid definition of “design systems”) Defining design systems via <a
+              <li name="b016" id="b016" className="graf graf--li graf--leading">(Original definition edited out of final draft, but here is a solid definition of “design systems”) Defining design systems via <a
                       href="https://www.designbetter.co/design-systems-handbook/introducing-design-systems" data-href="https://www.designbetter.co/design-systems-handbook/introducing-design-systems" className="markup--anchor markup--li-anchor" rel="noopener noreferrer"
                       target="_blank">Introducing design systems</a></li>
                   <li name="9810" id="9810" className="graf graf--li graf-after--li">Listen to <a href="https://medium.com/u/b954a8b795dc" data-href="https://medium.com/u/b954a8b795dc" data-anchor-type="2" data-user-id="b954a8b795dc"
@@ -185,7 +187,6 @@ const ModeMediumPost = () => (
                       data-href="https://medium.com/eightshapes-llc/a-design-system-isn-t-a-project-it-s-a-product-serving-products-74dcfffef935" className="markup--anchor markup--li-anchor" rel="noopener noreferrer" target="_blank">A design system isn’t a project. It’s a product,
                       serving products.</a></li>
                 </ol>
-              </p>
             </div>
           </div>
         </section>
