@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Lightbox from '../Lightbox';
 import family1 from './family-1.jpg';
 import family2 from './family-2.jpg';
@@ -16,5 +17,13 @@ const Collage = ({ caption }) => (
     { caption && <figcaption>{caption}</figcaption> }
   </figure>
 );
+
+Collage.defaultProps = {
+  caption: null,
+}
+
+Collage.propTypes = {
+  caption: PropTypes.string,
+}
 
 export default Collage;

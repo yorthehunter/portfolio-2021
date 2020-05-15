@@ -113,3 +113,20 @@
 .optionalBreak {
   @include hide-above($breakpoint-sm);
 }
+
+.pdfDownload {
+  border: none !important;
+
+  > svg {
+    width: 2rem;
+    height: 2rem;
+
+    &:hover path {
+      fill: color(raspberry);
+    }
+  }
+}
+
+.or {
+  color: color(gray, 5);
+}
