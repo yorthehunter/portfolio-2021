@@ -26,8 +26,8 @@ const Header = () => {
       </Link>
       <h2 className={style.myName}>Brian Cleveland</h2>
       <h3 className={style.myTitle}>
-        Lead Designer, Design Platform<br />
-        at Stitch Fix
+        Principal Design Engineer<br />
+        at Anomalie
       </h3>
       <ul className={style.myLinks}>
         <li>
