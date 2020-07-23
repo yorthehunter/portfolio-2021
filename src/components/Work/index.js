@@ -15,7 +15,7 @@ const Work = () => (
     <section className={style.highlight}>
       <h3>Mode Design System</h3>
       <p>The Mode Design System is a set of tools, automation, guidelines, and more that enables consistent and scalable UI at Stitch Fix. Mode is my most ambitious and influential product at Stitch Fix, currently supporting the entire customer-facing experience and those product teams. We are currently in the process of applying the design system to expert use (internal) tools at Stitch Fix, too.</p>
-      <p><Link to={`/work/mode`}>Read my article about creating Mode »</Link></p>
+      <p><a href="https://medium.com/@yorthehunter/introducing-the-mode-design-system-b3a64cb916da">Read my article about creating Mode »</a></p>
       <h4>Highlights</h4>
       <ul>
         <li>Created a new team at Stitch Fix called the <strong>Design Platform</strong> team, responsible for scaling products by providing product teams with systemic guidance, tooling, automation, and process improvements</li>
