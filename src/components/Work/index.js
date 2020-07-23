@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from '@reach/router';
 import style from './style.module.scss';
 import modeImg from './mode-2.png';
 import modeImg2 from './mode-3.png';
