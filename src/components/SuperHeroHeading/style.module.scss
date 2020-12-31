@@ -1,0 +1,39 @@
+@import "../../core.scss";
+
+.superHeroHeading {
+  @include display;
+
+  position: relative;
+  margin-bottom: 4rem;
+  margin-top: 5rem;
+
+  &:hover {
+    animation: glowBig 1.4s ease-out;
+  }
+
+  @include above-breakpoint-md {
+    margin-top: 0;
+  }
+
+  > .strategist {
+    color: map-get($colors, raspberry);
+  }
+
+  > .developer {
+    color: map-get($colors, grape);
+  }
+
+  &::after {
+    content: '';
+    height: 0.25rem;
+    width: 5rem;
+    background-color: map-get($colors, raspberry);
+    position: absolute;
+    left: 0;
+    bottom: -0.25rem;
+  }
+}
+
+.optionalBreak {
+  @include hide-above($breakpoint-sm);
+}

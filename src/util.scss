@@ -1,11 +1,11 @@
 .article-content {
   color: color(gray, 1);
-  h1 { @include title(1, true); }
-  h2 { @include title(2, true); }
-  h3 { @include title(3, true); }
-  h4 { @include title(4, true); }
-  h5 { @include title(4, false); }
-  p { @include body-copy(2, true); max-width: 42.5rem; }
+  h1, .as-h1 { @include title(1, true); }
+  h2, .as-h2 { @include title(2, true); }
+  h3, .as-h3 { @include title(3, true); }
+  h4, .as-h4 { @include title(4, true); }
+  h5, .as-h5 { @include title(4, false); }
+  p, .as-p { @include body-copy(2, true); max-width: 42.5rem; }
 
   h1,
   h2,
@@ -123,6 +123,19 @@
       text-decoration: underline;
     }
   }
+
+  .resume-work-history-item {
+    
+
+    .resume-work-history-heading {
+
+    }
+  
+    .resume-work-history-timeframe {
+      // @include body-copy(2, true);
+    }
+  }
+
 }
 
 @keyframes slideIn {

@@ -26,6 +26,7 @@
   @include font('eyebrow', $size, $isResponsive);
   font-family: $font-family-sans-serif;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 @mixin body-copy($size: 1, $isResponsive: false) {
@@ -40,6 +41,15 @@
     color: color(raspberry);
     animation: glow 0.7s ease-out;
   }
+}
+
+@mixin hide-from-view {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
 }
 
 @keyframes glowBig {
