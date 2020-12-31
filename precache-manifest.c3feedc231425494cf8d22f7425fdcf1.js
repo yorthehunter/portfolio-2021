@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "282b64a3f73378c9d4cebbe5bfdb9da6",
+    "revision": "6c6e4efd4ad98c91cccf3e39d89ed507",
     "url": "/index.html"
   },
   {
-    "revision": "dcc7db3fff84d9f7cc25",
-    "url": "/static/css/main.ccb3093f.chunk.css"
+    "revision": "610499706deaeb6bdffa",
+    "url": "/static/css/main.987093d2.chunk.css"
   },
   {
-    "revision": "30cb833a7dba2e310464",
-    "url": "/static/js/2.58743cf0.chunk.js"
+    "revision": "8d6bbb98ac8066552aad",
+    "url": "/static/js/2.40ba5e23.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/static/js/2.58743cf0.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.40ba5e23.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dcc7db3fff84d9f7cc25",
-    "url": "/static/js/main.41da5d85.chunk.js"
+    "revision": "610499706deaeb6bdffa",
+    "url": "/static/js/main.c237b14f.chunk.js"
   },
   {
     "revision": "967a46d8b67e4e01db1f",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c2d3e57bcac04ae88ac5ebf35b255c3d",
     "url": "/static/media/cup.c2d3e57b.svg"
+  },
+  {
+    "revision": "37d0562e7355cd5cdc6a8f968bb02128",
+    "url": "/static/media/email.37d0562e.svg"
   },
   {
     "revision": "e1bf1ac2042aab110f6f645b37de66b6",
@@ -56,6 +60,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/family-3.01f7d817.jpg"
   },
   {
+    "revision": "2faf727092c6f2dc6481fd81eedafc66",
+    "url": "/static/media/github.2faf7270.svg"
+  },
+  {
     "revision": "3083cabec496b898e61eb02793001260",
     "url": "/static/media/gozer-2.3083cabe.png"
   },
@@ -64,16 +72,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/lightbulb.b9766a63.svg"
   },
   {
+    "revision": "7e328fed49c8e488697ecb97f43e4bed",
+    "url": "/static/media/linkedin.7e328fed.svg"
+  },
+  {
     "revision": "8c13437f4978d432de09738dcfc42133",
     "url": "/static/media/mode-2.8c13437f.png"
   },
   {
     "revision": "d3340ef215c47dd9284f383f7931353e",
     "url": "/static/media/mode-3.d3340ef2.png"
-  },
-  {
-    "revision": "0e9b5cd4b05c60c64fdb95731602d851",
-    "url": "/static/media/pdf-download.0e9b5cd4.svg"
   },
   {
     "revision": "9f0fd8b432446feab7adf07f3cd460c2",
