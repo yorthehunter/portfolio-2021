@@ -6,7 +6,6 @@ import Work from '../Work';
 import Test from '../Test';
 import ModeMediumPost from '../Articles/ModeMediumPost';
 import { Router } from "@reach/router"
-import Resume from '../Resume';
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
         <Router>
           <About path={`/`} />
           <Work path={`/work`} />
-          <Resume path={`/resume`} />
           <ModeMediumPost path={`/work/mode`} />
           <Test path={`/test`} />
         </Router>

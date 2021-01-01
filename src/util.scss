@@ -1,3 +1,4 @@
+
 .article-content {
   color: color(gray, 1);
   h1, .as-h1 { @include title(1, true); }
@@ -31,6 +32,12 @@
     a {
       @include link-text;
     }
+
+  svg {
+    display: inline-flex;
+    height: 0.75em;
+    width: 0.75em;
+  }
 
   ol > li,
   ul > li {

@@ -30,11 +30,6 @@ const Header = () => {
         at Anomalie
       </h3>
       <ul className={style.myLinks}>
-        {/* <li>
-          <a style={{ marginRight: '0.5rem' }} href="https://www.figma.com/file/k4atM81j9Nr2LZWZBwdT0i/Brian-Cleveland---Resume?node-id=1%3A39">View Resume</a>
-          <span className={style.or}>::</span>
-          <a href={`${process.env.PUBLIC_URL}/brian_cleveland_resume.pdf`} className={style.pdfDownload} download><PdfDownload /></a>
-        </li> */}
         <li>
           <a href="https://www.linkedin.com/in/borudesign/">
             LinkedIn

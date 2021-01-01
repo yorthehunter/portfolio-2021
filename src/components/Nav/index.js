@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './style.module.scss';
 import { Link } from "@reach/router";
+import LinkToResume from '../LinkToResume';
 
 const Nav = () => (
   <nav className={style.nav}>
@@ -12,7 +13,7 @@ const Nav = () => (
         <Link to={`/work`}>Work</Link>
       </li>
       <li>
-        <Link to={`/resume`}>Resume</Link>
+        <LinkToResume />
       </li>
     </ul>
   </nav>

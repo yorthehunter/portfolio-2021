@@ -31,5 +31,13 @@
     text-decoration: none;
     margin-left: 0.75rem;
     margin-right: 0.75rem;
+    display: inline-flex;
+    align-items: center;
+
+    svg {
+      margin-left: 0.25rem;
+      width: 0.75rem;
+      height: 0.75rem;
+    }
   }
 }
