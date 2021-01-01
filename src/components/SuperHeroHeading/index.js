@@ -7,8 +7,7 @@ const SuperHeroHeading = ({ tag }) => {
   return (
     <Tag className={style.superHeroHeading}>
       Design Systems<br />
-      <span className={style.strategist}>Strategist</span> &amp; <br className={style.optionalBreak} />
-      <span className={style.developer}>Developer</span>
+      <span className={style.strategist}>Strategist</span>
     </Tag>
   )
 }
