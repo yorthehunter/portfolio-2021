@@ -12,9 +12,12 @@ const Work = () => (
   <article className="article-content">
     <h2 className="page-heading">Work Highlights</h2>
     <section className={style.highlight}>
+      <p><em>Some work is proprietary and/or private. Please ask me about current work @ <strong>Anomalie</strong> or any past work.</em></p>
+    </section>
+    <section className={style.highlight}>
       <h3>Mode Design System</h3>
       <p>The Mode Design System is a set of tools, automation, guidelines, and more that enables consistent and scalable UI at Stitch Fix. Mode is my most ambitious and influential product at Stitch Fix, currently supporting the entire customer-facing experience and those product teams. We are currently in the process of applying the design system to expert use (internal) tools at Stitch Fix, too.</p>
-      <p><a href="https://medium.com/@yorthehunter/introducing-the-mode-design-system-b3a64cb916da">Read my article about creating Mode »</a></p>
+      <p><a href="https://medium.com/@yorthehunter/introducing-the-mode-design-system-b3a64cb916da">Read my Medium article about creating Mode »</a></p>
       <h4>Highlights</h4>
       <ul>
         <li>Created a new team at Stitch Fix called the <strong>Design Platform</strong> team, responsible for scaling products by providing product teams with systemic guidance, tooling, automation, and process improvements</li>
@@ -31,7 +34,7 @@ const Work = () => (
     </section>
     <section className={style.highlight}>
       <h3>Weave UI framework</h3>
-      <p>Weave is a UI framework consisting of a Sketch library (ported to Figma), a UI CSS kit, and a React library that enables rapid UI creation for internal / expert-use products at Stitch Fix.</p>
+      <p>Weave is a UI framework consisting of a shared Sketch component library, later ported to Figma, a UI CSS kit, and a React library that enables rapid UI creation for internal / expert-use products at Stitch Fix.</p>
       <h4>Highlights</h4>
       <ul>
         <li>Developed to empower engineers to more rapidly create UI</li>
@@ -50,7 +53,7 @@ const Work = () => (
       <h4>Highlights</h4>
       <ul>
         <li>Responsible for the design of the UI as well as the physical pick cart</li>
-        <li>Employed guerilla-style user testing, using a head-mounted GoPro to "experience" several users' picking perspectives, paper prototypes, more</li>
+        <li>Employed guerilla-style user testing, using a head-mounted GoPro to &quot;experience&quot; several users&apos; picking perspectives, paper prototypes, more</li>
         <li>Led a design team of two while mentoring an excellent junior designer</li>
         <li>Employed animation and visual hierarchy to accommodate a variety of users and conditions (low light, tall user, walking with a chrome book, etc)</li>
       </ul>
