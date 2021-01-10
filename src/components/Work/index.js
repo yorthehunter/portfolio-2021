@@ -1,52 +1,42 @@
 import React from 'react';
 import style from './style.module.scss';
-import modeImg from './mode-2.png';
-import modeImg2 from './mode-3.png';
-import weaveImg from './weave-1.png';
 import gozerImg from './gozer-2.png';
 import returnsImg from './returns-1.jpg';
 import Figure from '../Figure';
-
+import { workExamples } from './work';
 
 const Work = () => (
   <article className="article-content">
     <h2 className="page-heading">Work Highlights</h2>
+    <p>
+      I have an extensive background in product design and UI development. My most recent work has been in leading design direction and strategy, with a heavy focus on design systems, design tools and management, and cross-team (brand/marketing, engineering, product, research) frameworks for scaling design.
+    </p>
     <section className={style.highlight}>
       <p><em>Some work is proprietary and/or private. Please ask me about current work @ <strong>Anomalie</strong> or any past work.</em></p>
     </section>
-    <section className={style.highlight}>
-      <h3>Mode Design System</h3>
-      <p>The Mode Design System is a set of tools, automation, guidelines, and more that enables consistent and scalable UI at Stitch Fix. Mode is my most ambitious and influential product at Stitch Fix, currently supporting the entire customer-facing experience and those product teams. We are currently in the process of applying the design system to expert use (internal) tools at Stitch Fix, too.</p>
-      <p><a href="https://medium.com/@yorthehunter/introducing-the-mode-design-system-b3a64cb916da">Read my Medium article about creating Mode »</a></p>
-      <h4>Highlights</h4>
-      <ul>
-        <li>Created a new team at Stitch Fix called the <strong>Design Platform</strong> team, responsible for scaling products by providing product teams with systemic guidance, tooling, automation, and process improvements</li>
-        <li>Created a strategy and delivering a design system for customer-facing applications at Stitch Fix</li>
-        <li>Designed and helped build a style system: Sass mixins + variables as a single-source code repository for Stitch Fix UI</li>
-        <li>Created a system for employing design token (individual units of design) in order to create a simpler, design-led process for managing cross-platform UI</li>
-        <li>Mode is currently employed by 8+ teams (~80 engineers and managers, 8+ PMs, 12 designers)</li>
-        <li>Recently scoped to expand to expert-use / internal tools (initially 3+ teams, potentially several more)</li>
-      </ul>
-      <p>
-        <Figure asLightbox imgSrc={modeImg} caption="A screen shot of the Mode style system documentation site" />
-        <Figure asLightbox imgSrc={modeImg2} caption="A screen shot of the Mode Figma library" />
-      </p>
-    </section>
-    <section className={style.highlight}>
-      <h3>Weave UI framework</h3>
-      <p>Weave is a UI framework consisting of a shared Sketch component library, later ported to Figma, a UI CSS kit, and a React library that enables rapid UI creation for internal / expert-use products at Stitch Fix.</p>
-      <h4>Highlights</h4>
-      <ul>
-        <li>Developed to empower engineers to more rapidly create UI</li>
-        <li>A variable-based simple and functional design system for constraining UI options and easing development</li>
-        <li>A UI React library with full test coverage</li>
-        <li>Helped create standards for front end code on my team</li>
-        <li>I was the first front end engineer at Stitch Fix, helping us begin a process of specialization and platformization of front end and design</li>
-      </ul>
-      <p>
-        <Figure asLightbox imgSrc={weaveImg} caption="A screen shot of the Weave React library documentation site" />
-      </p>
-    </section>
+    {
+      workExamples.map((example, i) => (
+        <section className={style.highlight} key={i}>
+          <h3>{example.heading}</h3>
+          <p>{example.overview}</p>
+          <h4>Highlights</h4>
+          <ul>
+            {
+              example.highlights.map((highlight, ii) => (
+                <li key={ii}>{highlight}</li>
+              ))
+            }
+          </ul>
+          <p>
+            {
+              example.images.map((image, iii) => (
+                <Figure key={iii} asLightbox imgSrc={image.url} caption={image.caption} />
+              ))
+            }
+          </p>
+        </section>
+      ))
+    }
     <section className={style.highlight}>
       <h3>Gozer: a modern and customized picking application</h3>
       <p>Gozer is the web app that enabled pickers in Stitch Fix warehouses to scale up from picking one Fix (5 items) to 6+ Fixes on a single algorithmically-optimized path.</p>
