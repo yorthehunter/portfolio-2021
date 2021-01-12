@@ -136,11 +136,11 @@ const ModeMediumPost = () => (
               <p name="7691" id="7691" className="graf graf--p graf-after--figure">There is no universal approach to design systems. A lot of our hypotheses for success are conceptually based on the work of others, then modified to be specific to the
                 design principles and strategic goals of Stitch Fix. I’d like to share a few key takeaways I learned while retrofitting a design system to an enterprise product suite:</p>
               <ol className="postList">
-                <li name="fe7b" id="fe7b" className="graf graf--li graf-after--p">🏁 A Design System is never “done”—it’s a living product and holds the same high-quality standards that any of our other products hold⁵. Prioritize it on your product
+                <li name="fe7b" id="fe7b" className="graf graf--li graf-after--p"><span role="img" aria-label="checkered flag">🏁</span> A Design System is never “done”—it’s a living product and holds the same high-quality standards that any of our other products hold⁵. Prioritize it on your product
                   roadmap alongside other strategic initiatives.</li>
-                <li name="ca2d" id="ca2d" className="graf graf--li graf-after--li">❄️ A Design System should draw inspiration from the work of others, but be specially curated for your users’ needs. Every step forward is prioritized by feedback (direct <em
+                <li name="ca2d" id="ca2d" className="graf graf--li graf-after--li"><span role="img" aria-label="snowflake">❄️</span> A Design System should draw inspiration from the work of others, but be specially curated for your users’ needs. Every step forward is prioritized by feedback (direct <em
                     className="markup--em markup--li-em">and</em> indirect) from our product teams.</li>
-                <li name="488b" id="488b" className="graf graf--li graf-after--li">⛰ When facing a mountain of possible solutions, focus your energy on smaller, incremental improvements and rely on user feedback to help you prioritize next steps. Test the
+                <li name="488b" id="488b" className="graf graf--li graf-after--li"><span role="img" aria-label="mountain">⛰</span> When facing a mountain of possible solutions, focus your energy on smaller, incremental improvements and rely on user feedback to help you prioritize next steps. Test the
                   design system with your users like you would any other high-impact product design.</li>
               </ol>
               <p name="a1af" id="a1af" className="graf graf--p graf-after--li">I’m leaving out <em className="markup--em markup--p-em">a lot</em> of the hard work and dead ends that we came upon. For example, we initially envisioned a “vertical slice” project

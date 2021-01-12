@@ -7,9 +7,6 @@ import { Link } from "@reach/router";
 import { ReactComponent as Checkmark } from '../../icon/checkmark.svg';
 import style from './style.module.scss'
 import SuperHeroHeading from '../SuperHeroHeading';
-import { ReactComponent as LinkedIn } from '../../icon/linkedin.svg';
-import { ReactComponent as GitHub } from '../../icon/github.svg';
-import { ReactComponent as Email } from '../../icon/email.svg';
 
 const EMAIL_ADDRESS = "boru.design@gmail.com";
 
