@@ -13,6 +13,10 @@ const Work = () => (
       workExamples.map((example, i) => (
         <section className={style.highlight} key={i}>
           <h3>{example.heading}</h3>
+          {
+            example.__html &&
+            <p dangerouslySetInnerHTML={{ __html: example.__html }} />
+          }
           <p>{example.overview}</p>
           <h4>Highlights</h4>
           <ul>

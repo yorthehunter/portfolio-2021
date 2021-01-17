@@ -16,6 +16,10 @@ export const workExamples = [
       "Created the early system of design tokens enabling a simpler, design-led process for managing cross-platform UI",
       "Launched the design system of shared UI to 8 teams (~80 engineers and managers, 8+ PMs, 12 designers)",
     ],
+    __html:
+`
+<a href="https://yorthehunter.medium.com/introducing-the-mode-design-system-b3a64cb916da" target="_blank">Read my Medium post about working on the Mode Design System »</a>
+`,
     images: [
       {
         url: modeImg,
