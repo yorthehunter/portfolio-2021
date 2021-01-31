@@ -3,6 +3,7 @@ import modeImg2 from './mode-3.png';
 import weaveImg from './weave-1.png';
 import gozerImg from './gozer-2.png';
 import returnsImg from './returns-1.jpg';
+import { ModeExtraImages } from './';
 
 export const workExamples = [
   {
@@ -29,7 +30,8 @@ export const workExamples = [
         url: modeImg2,
         caption: "A screen shot of the Mode Figma library"
       },
-    ]
+    ],
+    extraInfo: true,
   },
   {
     heading: "Weave UI framework",
