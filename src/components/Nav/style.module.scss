@@ -2,11 +2,7 @@
 
 .nav {
   @include body-copy;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 2;
+
   background-color: color(white);
   margin-bottom: 2rem;
 
@@ -14,6 +10,15 @@
     margin-bottom: 4rem;
     position: relative;
   };
+
+  @include below-breakpoint-md {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
 
   ul {
     display: flex;
@@ -23,16 +28,33 @@
   }
 
   a {
-    @include link-text;
-
     padding: 0.25rem 0;
     font-style: normal;
     font-weight: normal;
     text-decoration: none;
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
     display: inline-flex;
     align-items: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 0%;
+      display: block;
+      border-bottom:2px solid color(grape);
+      transition: width .2s ease-out;
+    }
+
+    &.active::after {
+      width: 100%;
+    }
 
     svg {
       margin-left: 0.25rem;

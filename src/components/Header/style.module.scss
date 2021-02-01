@@ -62,11 +62,9 @@
   @include body-copy(2, true);
 
   padding: 0 1rem 4rem;
-  border-bottom: 1px solid color(gray, 5);
   overflow: auto;
 
   @include above-breakpoint-md {
-    border-right: 1px solid color(gray, 5);
     border-bottom: none;
     width: 375px;
     position: fixed;
