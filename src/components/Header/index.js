@@ -23,8 +23,8 @@ const Header = () => {
       </Link>
       <h2 className={style.myName}>Brian Cleveland</h2>
       <h3 className={style.myTitle}>
-        Principal Design Engineer<br />
-        at Anomalie
+        Design Systems Specialist<br />
+        at Modern Health
       </h3>
       <ul className={style.myLinks}>
         <li>
